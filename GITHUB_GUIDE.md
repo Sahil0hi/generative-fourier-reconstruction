@@ -12,18 +12,11 @@ Conda manages Python environments and packages. Install **Miniforge**, which inc
 
    | Computer | Installer |
    | --- | --- |
-   | Mac with an Apple M-series chip | `Miniforge3-MacOSX-arm64.pkg` |
-   | Mac with an Intel processor | `Miniforge3-MacOSX-x86_64.pkg` |
    | Windows with an Intel or AMD processor | `Miniforge3-Windows-x86_64.exe` |
-   | Linux | `Miniforge3-Linux-x86_64.sh`, or `Miniforge3-Linux-aarch64.sh` for ARM |
 
-2. **Mac or Windows:** open the downloaded installer and follow its prompts. On Mac, enable Conda initialization for your shell. On Windows, keep the Start menu shortcuts enabled. **Linux:** run the downloaded script with `bash` and answer `yes` when asked to initialize Conda; for example:
+2. **Mac or Windows:** open the downloaded installer and follow its prompts. On Windows, keep the Start menu shortcuts enabled
 
-   ```bash
-   bash ~/Downloads/Miniforge3-Linux-x86_64.sh
-   ```
-
-3. Close and reopen **Terminal** on Mac/Linux. On Windows, open **Miniforge Prompt** from the Start menu and use it for the setup commands below.
+On Windows, open **Miniforge Prompt** from the Start menu and use it for the setup commands below.
 4. Verify the installation:
 
    ```bash
