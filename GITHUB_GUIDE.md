@@ -4,9 +4,37 @@ Repository: [generative-fourier-reconstruction](https://github.com/Sahil0hi/gene
 
 GitHub shares saved files between our computers. We each run Python locally using `environment.yml`. The shared notebook is `stage1_partner.ipynb`.
 
- repository.
+## Install Conda
 
-With Git and Conda installed,  runs:
+Conda manages Python environments and packages. Install **Miniforge**, which includes Conda and uses the same conda-forge package source as this project. You do not need to install Python separately. If `conda --version` already works, skip to the next section. [Official Miniforge instructions](https://github.com/conda-forge/miniforge#install)
+
+1. Open the [official installer downloads](https://github.com/conda-forge/miniforge/releases/latest) and choose your computer:
+
+   | Computer | Installer |
+   | --- | --- |
+   | Mac with an Apple M-series chip | `Miniforge3-MacOSX-arm64.pkg` |
+   | Mac with an Intel processor | `Miniforge3-MacOSX-x86_64.pkg` |
+   | Windows with an Intel or AMD processor | `Miniforge3-Windows-x86_64.exe` |
+   | Linux | `Miniforge3-Linux-x86_64.sh`, or `Miniforge3-Linux-aarch64.sh` for ARM |
+
+2. **Mac or Windows:** open the downloaded installer and follow its prompts. On Mac, enable Conda initialization for your shell. On Windows, keep the Start menu shortcuts enabled. **Linux:** run the downloaded script with `bash` and answer `yes` when asked to initialize Conda; for example:
+
+   ```bash
+   bash ~/Downloads/Miniforge3-Linux-x86_64.sh
+   ```
+
+3. Close and reopen **Terminal** on Mac/Linux. On Windows, open **Miniforge Prompt** from the Start menu and use it for the setup commands below.
+4. Verify the installation:
+
+   ```bash
+   conda --version
+   ```
+
+   A result such as `conda 26.x.x` means Conda is available. If the command is not found, check shell initialization on Mac/Linux or use Miniforge Prompt on Windows before continuing.
+
+## Create the project environment
+
+With Git installed and Conda working, run:
 
 ```bash
 git clone https://github.com/Sahil0hi/generative-fourier-reconstruction.git
