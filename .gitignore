@@ -1,6 +1,7 @@
 # Track only reviewed deliverables. Add new public files explicitly below.
 *
 !/.gitignore
+!/GITHUB_GUIDE.md
 !/environment.yml
 !/stage1_partner.ipynb
 !/Paper_1_and_Stage_1_Guide.docx
