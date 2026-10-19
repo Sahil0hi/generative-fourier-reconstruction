@@ -1,9 +1,7 @@
 # Track only reviewed deliverables. Add new public files explicitly below.
 *
 !/.gitignore
-!/README.md
 !/environment.yml
-!/stage1_mnist.ipynb
 !/stage1_partner.ipynb
 !/Paper_1_and_Stage_1_Guide.docx
 !/Paper_1_and_Stage_1_Guide.pdf
