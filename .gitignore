@@ -1,0 +1,18 @@
+# Track only reviewed deliverables. Add new public files explicitly below.
+*
+!/.gitignore
+!/README.md
+!/environment.yml
+!/stage1_mnist.ipynb
+!/stage1_partner.ipynb
+!/Paper_1_and_Stage_1_Guide.docx
+!/Paper_1_and_Stage_1_Guide.pdf
+
+!/outputs/
+/outputs/*
+!/outputs/stage1/
+/outputs/stage1/*
+!/outputs/stage1/20261017T194144_806900Z/
+/outputs/stage1/20261017T194144_806900Z/*
+!/outputs/stage1/20261017T194144_806900Z/stage1_figure.png
+!/outputs/stage1/20261017T194144_806900Z/summary.json

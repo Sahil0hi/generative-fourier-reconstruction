@@ -1,0 +1,79 @@
+{
+  "dataset": "MNIST",
+  "config": {
+    "seed": 42,
+    "n_train": 2000,
+    "n_val": 200,
+    "n_test": 200,
+    "image_size": 28,
+    "retained_lines": 7,
+    "central_lines": 3,
+    "pca_ranks": [
+      8,
+      16,
+      32
+    ],
+    "ridge_values": [
+      0.0,
+      0.0001,
+      0.01
+    ],
+    "eight_image_steps": 1500,
+    "eight_image_lr": 0.01
+  },
+  "selected_rank": 32,
+  "selected_ridge": 0.01,
+  "sampled_rows": [
+    1,
+    9,
+    11,
+    13,
+    14,
+    15,
+    18
+  ],
+  "sampled_fraction": 0.25,
+  "fft": "centered, norm=ortho, axes=(-2,-1); no measurement noise",
+  "psnr": "data_range=1; raw real reconstruction; no clipping",
+  "mean_test_psnr_db": {
+    "zero_fill": 15.816967533705933,
+    "pca": 17.37360810963268
+  },
+  "fourier_checks": {
+    "complex_batch_roundtrip_max_error": 1.831026719408895e-15,
+    "constant_dc_max_error": 3.552713678800501e-15,
+    "off_center_impulse_phase_max_error": 1.5504197211846598e-16,
+    "real_domain_adjoint_absolute_error": 4.440892098500626e-15
+  },
+  "gradient_check": {
+    "coordinate": 1,
+    "epsilon": 1e-05,
+    "automatic_gradient": -4.0419613597375275,
+    "finite_difference_gradient": -4.041961359746438,
+    "absolute_error": 8.910205906431656e-12,
+    "relative_error": 2.2044262954039264e-12
+  },
+  "eight_image_check": {
+    "initial_mse": 0.06184424499384397,
+    "final_mse": 3.3446323864578703e-11
+  },
+  "timing_seconds": {
+    "pca_training_run": 0.017017541045788676,
+    "eight_image_training_run": 0.17954141600057483,
+    "zero_fill_all_test": 0.001793083967640996,
+    "pca_recovery_all_test": 0.002655999967828393
+  },
+  "hardware": {
+    "platform": "macOS-26.0-arm64-arm-64bit",
+    "machine": "arm64",
+    "device": "CPU"
+  },
+  "versions": {
+    "numpy": "2.3.3",
+    "matplotlib": "3.10.6",
+    "scikit-learn": "1.8.0",
+    "torch": "2.14.0",
+    "torchvision": "0.29.0"
+  },
+  "python": "3.11.13"
+}
