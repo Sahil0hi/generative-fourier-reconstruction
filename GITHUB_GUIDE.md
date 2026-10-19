@@ -4,11 +4,9 @@ Repository: [generative-fourier-reconstruction](https://github.com/Sahil0hi/gene
 
 GitHub shares saved files between our computers. We each run Python locally using `environment.yml`. The shared notebook is `stage1_partner.ipynb`.
 
-## First setup
+ repository.
 
-Sahil adds Partner under **Settings > Collaborators > Add people**. Partner accepts the invitation to get permission to push. Public visibility allows anyone to read and clone the repository.
-
-With Git and Conda installed, Partner runs:
+With Git and Conda installed,  runs:
 
 ```bash
 git clone https://github.com/Sahil0hi/generative-fourier-reconstruction.git
